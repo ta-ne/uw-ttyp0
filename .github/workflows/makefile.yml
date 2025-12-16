@@ -12,6 +12,12 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
+
+    - name: install packages
+      run: |
+        sudo apt update
+        sudo apt install -y xfonts-utils
+    
     - run: ls -la
     - run: ./configure --help
     - run: ./configure
