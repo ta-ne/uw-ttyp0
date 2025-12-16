@@ -21,6 +21,7 @@ jobs:
         mkdir -p $PWD/ci-dist
         mkdir -p $PWD/ci-install
         mkdir -p genpcf
+        mkdir -p genotbbdf
     
     - run: ls -la
     - run: ./configure --help
