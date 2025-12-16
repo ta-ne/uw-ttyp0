@@ -23,6 +23,7 @@ jobs:
         mkdir -p genpcf
         mkdir -p genotbbdf
         mkdir -p genotb
+        mkdir -p genconslinux
     
     - run: ls -la
     - run: ./configure --help
