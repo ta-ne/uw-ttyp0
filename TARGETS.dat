@@ -52,7 +52,7 @@ GEN_OTB = 1
 # If you need console fonts for Linux, set GEN_CONS_LINUX to 1 and edit
 # the file TARGETS_CONS_LINUX.dat afterwards, otherwise set it to 0:
 
-GEN_CONS_LINUX = 0
+GEN_CONS_LINUX = 1
 
 # --------- FreeBSD (vt) console ---------
 #
