@@ -16,10 +16,13 @@ jobs:
     - name: install packages
       run: |
         sudo apt update
-        sudo apt install -y xfonts-utils
+        sudo apt install -y xfonts-utils bdf2psf
+
+        mkdir -p $PWD/ci-dist
+        mkdir -p $PWD/ci-install
     
     - run: ls -la
     - run: ./configure --help
-    - run: ./configure
+    - run: ./configure --installdirs=$PWD/ci-dist --prefix=$PWD/ci-install
     - run: make
     - run: ls -la
