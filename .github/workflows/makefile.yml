@@ -27,6 +27,8 @@ jobs:
     - run: ./configure --help
     - run: ./configure --installdirs=$PWD/ci-dist --prefix=$PWD/ci-install
     - run: make
+    - run: make otb
+    - run: make conslinux
     - run: ls -la
     - uses: actions/upload-artifact@v4
       with:
