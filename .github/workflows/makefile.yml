@@ -12,6 +12,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
-
-    - name: configure
-      run: ./configure --help
+    - run: ls -la
+    - run: ./configure --help
+    - run: ./configure
+    - run: make
+    - run: ls -la
