@@ -20,6 +20,7 @@ jobs:
 
         mkdir -p $PWD/ci-dist
         mkdir -p $PWD/ci-install
+        mkdir -p genpcf
     
     - run: ls -la
     - run: ./configure --help
